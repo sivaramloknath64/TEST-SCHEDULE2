@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-HappyTrip_Test_Suite">
+              <span class="suite-name border-passed">HappyTrip Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-HappyTrip_Test_Suite">
+                    <span>C:\Users\sivaram loknath\eclipse-workspace\new\happy\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-HappyTrip_Test_Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-HappyTrip_Test_Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-HappyTrip_Test_Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-HappyTrip_Test_Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-HappyTrip_Test_Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-HappyTrip_Test_Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">10 methods,   10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-HappyTrip_Test_Suite" class="hide-methods passed suite-HappyTrip_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-HappyTrip_Test_Suite -->
+                      <a href="#" panel-name="suite-HappyTrip_Test_Suite" class="show-methods passed suite-HappyTrip_Test_Suite"> (show)</a> <!-- show-methods passed suite-HappyTrip_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-HappyTrip_Test_Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-HappyTrip_Test_Suite" title="happytrip.com.Login" hash-for-method="loginAsAdmin(admin@mindtree.com, admin, AirAsia, 1, 1200, 0000, 0500, 1055, 2135)">loginAsAdmin(admin@mindtree.com, admin, AirAsia, 1, 1200, 0000, 0500, 1055, 2135)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-HappyTrip_Test_Suite" title="happytrip.com.Login" hash-for-method="loginAsAdmin(admin@mindtree.com, admin, DelhiFlights, 2, 1110, 0200, 0600, 3554, 2145)">loginAsAdmin(admin@mindtree.com, admin, DelhiFlights, 2, 1110, 0200, 0600, 3554, 2145)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-HappyTrip_Test_Suite" title="happytrip.com.Login" hash-for-method="loginAsAdmin(admin@mindtree.com, admin, $$$$, 10, 1354, 1000, 1400, 2135, 7584)">loginAsAdmin(admin@mindtree.com, admin, $$$$, 10, 1354, 1000, 1400, 2135, 7584)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-HappyTrip_Test_Suite" title="happytrip.com.Login" hash-for-method="loginAsAdmin(admin@mindtree.com, admin, a, 6, 1021, 0600, 1000, 1125, 2545)">loginAsAdmin(admin@mindtree.com, admin, a, 6, 1021, 0600, 1000, 1125, 2545)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-HappyTrip_Test_Suite" title="happytrip.com.Login" hash-for-method="loginAsAdmin(admin@mindtree.com, admin, Humsafar, 3, 1233, 0300, 0700, 2153, 3125)">loginAsAdmin(admin@mindtree.com, admin, Humsafar, 3, 1233, 0300, 0700, 2153, 3125)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-HappyTrip_Test_Suite" title="happytrip.com.Login" hash-for-method="loginAsAdmin(admin@mindtree.com, admin, IATA, 4, 1122, 0400, 0800, 1135, 1865)">loginAsAdmin(admin@mindtree.com, admin, IATA, 4, 1122, 0400, 0800, 1135, 1865)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-HappyTrip_Test_Suite" title="happytrip.com.Login" hash-for-method="loginAsAdmin(admin@mindtree.com, admin, KochinAirlines, 5, 1113, 0500, 0900, 1125, 2121)">loginAsAdmin(admin@mindtree.com, admin, KochinAirlines, 5, 1113, 0500, 0900, 1125, 2121)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-HappyTrip_Test_Suite" title="happytrip.com.Login" hash-for-method="loginAsAdmin(admin@mindtree.com, admin, demo, 8, 1112, 0800, 1200, 1125, 3154)">loginAsAdmin(admin@mindtree.com, admin, demo, 8, 1112, 0800, 1200, 1125, 3154)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-HappyTrip_Test_Suite" title="happytrip.com.Login" hash-for-method="loginAsAdmin(admin@mindtree.com, admin, bly123, 7, 1215, 0700, 1100, 1125, 4548)">loginAsAdmin(admin@mindtree.com, admin, bly123, 7, 1215, 0700, 1100, 1125, 4548)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-HappyTrip_Test_Suite" title="happytrip.com.Login" hash-for-method="loginAsAdmin(admin@mindtree.com, admin, yoyo001, 9, 1235, 0900, 1300, 2135, 4565)">loginAsAdmin(admin@mindtree.com, admin, yoyo001, 9, 1235, 0900, 1300, 2135, 4565)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-HappyTrip_Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-HappyTrip_Test_Suite" class="panel HappyTrip_Test_Suite">
+          <div class="suite-HappyTrip_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">happytrip.com.Login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginAsAdmin(admin@mindtree.com, admin, AirAsia, 1, 1200, 0000, 0500, 1055, 2135)">
+                  </a> <!-- loginAsAdmin(admin@mindtree.com, admin, AirAsia, 1, 1200, 0000, 0500, 1055, 2135) -->
+                  <span class="method-name">loginAsAdmin</span>
+                  <span class="parameters">(admin@mindtree.com, admin, AirAsia, 1, 1200, 0000, 0500, 1055, 2135)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginAsAdmin(admin@mindtree.com, admin, DelhiFlights, 2, 1110, 0200, 0600, 3554, 2145)">
+                  </a> <!-- loginAsAdmin(admin@mindtree.com, admin, DelhiFlights, 2, 1110, 0200, 0600, 3554, 2145) -->
+                  <span class="method-name">loginAsAdmin</span>
+                  <span class="parameters">(admin@mindtree.com, admin, DelhiFlights, 2, 1110, 0200, 0600, 3554, 2145)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginAsAdmin(admin@mindtree.com, admin, $$$$, 10, 1354, 1000, 1400, 2135, 7584)">
+                  </a> <!-- loginAsAdmin(admin@mindtree.com, admin, $$$$, 10, 1354, 1000, 1400, 2135, 7584) -->
+                  <span class="method-name">loginAsAdmin</span>
+                  <span class="parameters">(admin@mindtree.com, admin, $$$$, 10, 1354, 1000, 1400, 2135, 7584)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginAsAdmin(admin@mindtree.com, admin, a, 6, 1021, 0600, 1000, 1125, 2545)">
+                  </a> <!-- loginAsAdmin(admin@mindtree.com, admin, a, 6, 1021, 0600, 1000, 1125, 2545) -->
+                  <span class="method-name">loginAsAdmin</span>
+                  <span class="parameters">(admin@mindtree.com, admin, a, 6, 1021, 0600, 1000, 1125, 2545)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginAsAdmin(admin@mindtree.com, admin, Humsafar, 3, 1233, 0300, 0700, 2153, 3125)">
+                  </a> <!-- loginAsAdmin(admin@mindtree.com, admin, Humsafar, 3, 1233, 0300, 0700, 2153, 3125) -->
+                  <span class="method-name">loginAsAdmin</span>
+                  <span class="parameters">(admin@mindtree.com, admin, Humsafar, 3, 1233, 0300, 0700, 2153, 3125)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginAsAdmin(admin@mindtree.com, admin, IATA, 4, 1122, 0400, 0800, 1135, 1865)">
+                  </a> <!-- loginAsAdmin(admin@mindtree.com, admin, IATA, 4, 1122, 0400, 0800, 1135, 1865) -->
+                  <span class="method-name">loginAsAdmin</span>
+                  <span class="parameters">(admin@mindtree.com, admin, IATA, 4, 1122, 0400, 0800, 1135, 1865)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginAsAdmin(admin@mindtree.com, admin, KochinAirlines, 5, 1113, 0500, 0900, 1125, 2121)">
+                  </a> <!-- loginAsAdmin(admin@mindtree.com, admin, KochinAirlines, 5, 1113, 0500, 0900, 1125, 2121) -->
+                  <span class="method-name">loginAsAdmin</span>
+                  <span class="parameters">(admin@mindtree.com, admin, KochinAirlines, 5, 1113, 0500, 0900, 1125, 2121)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginAsAdmin(admin@mindtree.com, admin, demo, 8, 1112, 0800, 1200, 1125, 3154)">
+                  </a> <!-- loginAsAdmin(admin@mindtree.com, admin, demo, 8, 1112, 0800, 1200, 1125, 3154) -->
+                  <span class="method-name">loginAsAdmin</span>
+                  <span class="parameters">(admin@mindtree.com, admin, demo, 8, 1112, 0800, 1200, 1125, 3154)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginAsAdmin(admin@mindtree.com, admin, bly123, 7, 1215, 0700, 1100, 1125, 4548)">
+                  </a> <!-- loginAsAdmin(admin@mindtree.com, admin, bly123, 7, 1215, 0700, 1100, 1125, 4548) -->
+                  <span class="method-name">loginAsAdmin</span>
+                  <span class="parameters">(admin@mindtree.com, admin, bly123, 7, 1215, 0700, 1100, 1125, 4548)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginAsAdmin(admin@mindtree.com, admin, yoyo001, 9, 1235, 0900, 1300, 2135, 4565)">
+                  </a> <!-- loginAsAdmin(admin@mindtree.com, admin, yoyo001, 9, 1235, 0900, 1300, 2135, 4565) -->
+                  <span class="method-name">loginAsAdmin</span>
+                  <span class="parameters">(admin@mindtree.com, admin, yoyo001, 9, 1235, 0900, 1300, 2135, 4565)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-HappyTrip_Test_Suite-class-passed -->
+        </div> <!-- panel HappyTrip_Test_Suite -->
+        <div panel-name="test-xml-HappyTrip_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\sivaram loknath\eclipse-workspace\new\happy\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;HappyTrip Test Suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Flight Schedule Tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;happytrip.com.Login&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Flight Schedule Tests --&gt;
+&lt;/suite&gt; &lt;!-- HappyTrip Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-HappyTrip_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for HappyTrip Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Flight Schedule Tests (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-HappyTrip_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for HappyTrip Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-HappyTrip_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for HappyTrip Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_HappyTrip_Test_Suite');
+function tableData_HappyTrip_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(10);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'loginAsAdmin')
+data.setCell(0, 2, 'happytrip.com.Login')
+data.setCell(0, 3, 7711);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'loginAsAdmin')
+data.setCell(1, 2, 'happytrip.com.Login')
+data.setCell(1, 3, 7506);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'loginAsAdmin')
+data.setCell(2, 2, 'happytrip.com.Login')
+data.setCell(2, 3, 7077);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'loginAsAdmin')
+data.setCell(3, 2, 'happytrip.com.Login')
+data.setCell(3, 3, 6958);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'loginAsAdmin')
+data.setCell(4, 2, 'happytrip.com.Login')
+data.setCell(4, 3, 6743);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'loginAsAdmin')
+data.setCell(5, 2, 'happytrip.com.Login')
+data.setCell(5, 3, 6717);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'loginAsAdmin')
+data.setCell(6, 2, 'happytrip.com.Login')
+data.setCell(6, 3, 6552);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'loginAsAdmin')
+data.setCell(7, 2, 'happytrip.com.Login')
+data.setCell(7, 3, 5786);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'loginAsAdmin')
+data.setCell(8, 2, 'happytrip.com.Login')
+data.setCell(8, 3, 5775);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'loginAsAdmin')
+data.setCell(9, 2, 'happytrip.com.Login')
+data.setCell(9, 3, 5644);
+window.suiteTableData['HappyTrip_Test_Suite']= { tableData: data, tableDiv: 'times-div-HappyTrip_Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-HappyTrip_Test_Suite">
+              </div> <!-- times-div-HappyTrip_Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-HappyTrip_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for HappyTrip Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-HappyTrip_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-HappyTrip_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">happytrip.com.Login</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">TestSetup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginAsAdmin(admin@mindtree.com, admin, AirAsia, 1, 1200, 0000, 0500, 1055, 2135)</span>
+                <span class="method-start">14202 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">21928 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">TestSetup</span>
+                <span class="method-start">22134 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginAsAdmin(admin@mindtree.com, admin, DelhiFlights, 2, 1110, 0200, 0600, 3554, 2145)</span>
+                <span class="method-start">38038 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">44998 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">TestSetup</span>
+                <span class="method-start">45080 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginAsAdmin(admin@mindtree.com, admin, Humsafar, 3, 1233, 0300, 0700, 2153, 3125)</span>
+                <span class="method-start">53248 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">59972 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">TestSetup</span>
+                <span class="method-start">60144 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginAsAdmin(admin@mindtree.com, admin, IATA, 4, 1122, 0400, 0800, 1135, 1865)</span>
+                <span class="method-start">67960 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">74515 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">TestSetup</span>
+                <span class="method-start">74706 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginAsAdmin(admin@mindtree.com, admin, KochinAirlines, 5, 1113, 0500, 0900, 1125, 2121)</span>
+                <span class="method-start">82185 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">87963 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">TestSetup</span>
+                <span class="method-start">88486 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginAsAdmin(admin@mindtree.com, admin, a, 6, 1021, 0600, 1000, 1125, 2545)</span>
+                <span class="method-start">96664 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">103743 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">TestSetup</span>
+                <span class="method-start">103841 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginAsAdmin(admin@mindtree.com, admin, bly123, 7, 1215, 0700, 1100, 1125, 4548)</span>
+                <span class="method-start">113198 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">118986 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">TestSetup</span>
+                <span class="method-start">119105 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginAsAdmin(admin@mindtree.com, admin, demo, 8, 1112, 0800, 1200, 1125, 3154)</span>
+                <span class="method-start">127144 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">134652 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">TestSetup</span>
+                <span class="method-start">134723 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginAsAdmin(admin@mindtree.com, admin, yoyo001, 9, 1235, 0900, 1300, 2135, 4565)</span>
+                <span class="method-start">143271 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">148916 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">TestSetup</span>
+                <span class="method-start">149008 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginAsAdmin(admin@mindtree.com, admin, $$$$, 10, 1354, 1000, 1400, 2135, 7584)</span>
+                <span class="method-start">158875 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">165619 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

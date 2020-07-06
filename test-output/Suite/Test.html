@@ -1,0 +1,753 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/15</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jul 06 01:01:02 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>1 seconds (1155 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='BasePackage.Extent.startReport()'><b>startReport</b><br>Test class: BasePackage.Extent</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\sivaram loknath\eclipse-workspace\new\happy\testng.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2012846597", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2012846597'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\sivaram loknath\eclipse-workspace\new\happy\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:299)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:620)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:610)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>-1593977462</td>
+<td>BasePackage.Extent@27a8c74e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='happytrip.com.Login.TestSetup()'><b>TestSetup</b><br>Test class: happytrip.com.Login</td>
+<td></td>
+<td>-1593977463</td>
+<td>happytrip.com.Login@2d8f65a4</td></tr>
+<tr>
+<td title='happytrip.com.Login.TestSetup()'><b>TestSetup</b><br>Test class: happytrip.com.Login</td>
+<td></td>
+<td>-1593977463</td>
+<td>happytrip.com.Login@2d8f65a4</td></tr>
+<tr>
+<td title='happytrip.com.Login.TestSetup()'><b>TestSetup</b><br>Test class: happytrip.com.Login</td>
+<td></td>
+<td>-1593977463</td>
+<td>happytrip.com.Login@2d8f65a4</td></tr>
+<tr>
+<td title='happytrip.com.Login.TestSetup()'><b>TestSetup</b><br>Test class: happytrip.com.Login</td>
+<td></td>
+<td>-1593977463</td>
+<td>happytrip.com.Login@2d8f65a4</td></tr>
+<tr>
+<td title='happytrip.com.Login.TestSetup()'><b>TestSetup</b><br>Test class: happytrip.com.Login</td>
+<td></td>
+<td>-1593977463</td>
+<td>happytrip.com.Login@2d8f65a4</td></tr>
+<tr>
+<td title='happytrip.com.Login.TestSetup()'><b>TestSetup</b><br>Test class: happytrip.com.Login</td>
+<td></td>
+<td>-1593977463</td>
+<td>happytrip.com.Login@2d8f65a4</td></tr>
+<tr>
+<td title='happytrip.com.Login.TestSetup()'><b>TestSetup</b><br>Test class: happytrip.com.Login</td>
+<td></td>
+<td>-1593977463</td>
+<td>happytrip.com.Login@2d8f65a4</td></tr>
+<tr>
+<td title='happytrip.com.Login.TestSetup()'><b>TestSetup</b><br>Test class: happytrip.com.Login</td>
+<td></td>
+<td>-1593977463</td>
+<td>happytrip.com.Login@2d8f65a4</td></tr>
+<tr>
+<td title='happytrip.com.Login.TestSetup()'><b>TestSetup</b><br>Test class: happytrip.com.Login</td>
+<td></td>
+<td>-1593977463</td>
+<td>happytrip.com.Login@2d8f65a4</td></tr>
+<tr>
+<td title='happytrip.com.Login.TestSetup()'><b>TestSetup</b><br>Test class: happytrip.com.Login</td>
+<td></td>
+<td>-1593977463</td>
+<td>happytrip.com.Login@2d8f65a4</td></tr>
+<tr>
+<td title='happytrip.com.Login.teardown()'><b>teardown</b><br>Test class: happytrip.com.Login</td>
+<td></td>
+<td>-1593977463</td>
+<td>happytrip.com.Login@2d8f65a4</td></tr>
+<tr>
+<td title='happytrip.com.Login.teardown()'><b>teardown</b><br>Test class: happytrip.com.Login</td>
+<td></td>
+<td>-1593977463</td>
+<td>happytrip.com.Login@2d8f65a4</td></tr>
+<tr>
+<td title='happytrip.com.Login.teardown()'><b>teardown</b><br>Test class: happytrip.com.Login</td>
+<td></td>
+<td>-1593977463</td>
+<td>happytrip.com.Login@2d8f65a4</td></tr>
+<tr>
+<td title='happytrip.com.Login.teardown()'><b>teardown</b><br>Test class: happytrip.com.Login</td>
+<td></td>
+<td>-1593977463</td>
+<td>happytrip.com.Login@2d8f65a4</td></tr>
+<tr>
+<td title='happytrip.com.Login.teardown()'><b>teardown</b><br>Test class: happytrip.com.Login</td>
+<td></td>
+<td>-1593977463</td>
+<td>happytrip.com.Login@2d8f65a4</td></tr>
+<tr>
+<td title='happytrip.com.Login.teardown()'><b>teardown</b><br>Test class: happytrip.com.Login</td>
+<td></td>
+<td>-1593977463</td>
+<td>happytrip.com.Login@2d8f65a4</td></tr>
+<tr>
+<td title='happytrip.com.Login.teardown()'><b>teardown</b><br>Test class: happytrip.com.Login</td>
+<td></td>
+<td>-1593977463</td>
+<td>happytrip.com.Login@2d8f65a4</td></tr>
+<tr>
+<td title='happytrip.com.Login.teardown()'><b>teardown</b><br>Test class: happytrip.com.Login</td>
+<td></td>
+<td>-1593977463</td>
+<td>happytrip.com.Login@2d8f65a4</td></tr>
+<tr>
+<td title='happytrip.com.Login.teardown()'><b>teardown</b><br>Test class: happytrip.com.Login</td>
+<td></td>
+<td>-1593977463</td>
+<td>happytrip.com.Login@2d8f65a4</td></tr>
+<tr>
+<td title='happytrip.com.Login.teardown()'><b>teardown</b><br>Test class: happytrip.com.Login</td>
+<td></td>
+<td>-1593977463</td>
+<td>happytrip.com.Login@2d8f65a4</td></tr>
+<tr>
+<td title='BasePackage.Extent.getResult()'><b>getResult</b><br>Test class: BasePackage.Extent</td>
+<td></td>
+<td>-1593977463</td>
+<td>BasePackage.Extent@27a8c74e</td></tr>
+<tr>
+<td title='BasePackage.Extent.getResult()'><b>getResult</b><br>Test class: BasePackage.Extent</td>
+<td></td>
+<td>-1593977463</td>
+<td>BasePackage.Extent@27a8c74e</td></tr>
+<tr>
+<td title='BasePackage.Extent.getResult()'><b>getResult</b><br>Test class: BasePackage.Extent</td>
+<td></td>
+<td>-1593977463</td>
+<td>BasePackage.Extent@27a8c74e</td></tr>
+<tr>
+<td title='BasePackage.Extent.getResult()'><b>getResult</b><br>Test class: BasePackage.Extent</td>
+<td></td>
+<td>-1593977463</td>
+<td>BasePackage.Extent@27a8c74e</td></tr>
+<tr>
+<td title='BasePackage.Extent.getResult()'><b>getResult</b><br>Test class: BasePackage.Extent</td>
+<td></td>
+<td>-1593977463</td>
+<td>BasePackage.Extent@27a8c74e</td></tr>
+<tr>
+<td title='BasePackage.Extent.tearDown()'><b>tearDown</b><br>Test class: BasePackage.Extent</td>
+<td></td>
+<td>-1593977463</td>
+<td>BasePackage.Extent@27a8c74e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='happytrip.com.Login.loginAsAdmin()'><b>loginAsAdmin</b><br>Test class: happytrip.com.Login</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\sivaram loknath\eclipse-workspace\new\happy\testng.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace225672073", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace225672073'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\sivaram loknath\eclipse-workspace\new\happy\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:299)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:620)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:610)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>happytrip.com.Login@2d8f65a4</td></tr>
+<tr>
+<td title='happytrip.com.Login.loginAsAdmin()'><b>loginAsAdmin</b><br>Test class: happytrip.com.Login</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\sivaram loknath\eclipse-workspace\new\happy\testng.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace764419760", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace764419760'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\sivaram loknath\eclipse-workspace\new\happy\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:299)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:620)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:610)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>happytrip.com.Login@2d8f65a4</td></tr>
+<tr>
+<td title='happytrip.com.Login.loginAsAdmin()'><b>loginAsAdmin</b><br>Test class: happytrip.com.Login</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\sivaram loknath\eclipse-workspace\new\happy\testng.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1594138273", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1594138273'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\sivaram loknath\eclipse-workspace\new\happy\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:299)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:620)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:610)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>happytrip.com.Login@2d8f65a4</td></tr>
+<tr>
+<td title='happytrip.com.Login.loginAsAdmin()'><b>loginAsAdmin</b><br>Test class: happytrip.com.Login</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\sivaram loknath\eclipse-workspace\new\happy\testng.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1912821769", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1912821769'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\sivaram loknath\eclipse-workspace\new\happy\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:299)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:620)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:610)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>happytrip.com.Login@2d8f65a4</td></tr>
+<tr>
+<td title='happytrip.com.Login.loginAsAdmin()'><b>loginAsAdmin</b><br>Test class: happytrip.com.Login</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\sivaram loknath\eclipse-workspace\new\happy\testng.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1617838096", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1617838096'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\sivaram loknath\eclipse-workspace\new\happy\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:299)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:620)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:610)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>happytrip.com.Login@2d8f65a4</td></tr>
+<tr>
+<td title='happytrip.com.Login.loginAsAdmin()'><b>loginAsAdmin</b><br>Test class: happytrip.com.Login</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\sivaram loknath\eclipse-workspace\new\happy\testng.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1758008124", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1758008124'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\sivaram loknath\eclipse-workspace\new\happy\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:299)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:620)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:610)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>happytrip.com.Login@2d8f65a4</td></tr>
+<tr>
+<td title='happytrip.com.Login.loginAsAdmin()'><b>loginAsAdmin</b><br>Test class: happytrip.com.Login</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\sivaram loknath\eclipse-workspace\new\happy\testng.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace750029115", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace750029115'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\sivaram loknath\eclipse-workspace\new\happy\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:299)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:620)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:610)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>happytrip.com.Login@2d8f65a4</td></tr>
+<tr>
+<td title='happytrip.com.Login.loginAsAdmin()'><b>loginAsAdmin</b><br>Test class: happytrip.com.Login</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\sivaram loknath\eclipse-workspace\new\happy\testng.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1683662486", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1683662486'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\sivaram loknath\eclipse-workspace\new\happy\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:299)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:620)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:610)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>happytrip.com.Login@2d8f65a4</td></tr>
+<tr>
+<td title='happytrip.com.Login.loginAsAdmin()'><b>loginAsAdmin</b><br>Test class: happytrip.com.Login</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\sivaram loknath\eclipse-workspace\new\happy\testng.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace384515747", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace384515747'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\sivaram loknath\eclipse-workspace\new\happy\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:299)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:620)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:610)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>happytrip.com.Login@2d8f65a4</td></tr>
+<tr>
+<td title='happytrip.com.Login.loginAsAdmin()'><b>loginAsAdmin</b><br>Test class: happytrip.com.Login</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\sivaram loknath\eclipse-workspace\new\happy\testng.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace443934570", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace443934570'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\sivaram loknath\eclipse-workspace\new\happy\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:299)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:620)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:610)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>happytrip.com.Login@2d8f65a4</td></tr>
+<tr>
+<td title='BasePackage.Extent.testCase1()'><b>testCase1</b><br>Test class: BasePackage.Extent</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\sivaram loknath\eclipse-workspace\new\happy\testng.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1401316767", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1401316767'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\sivaram loknath\eclipse-workspace\new\happy\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:299)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:620)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:610)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>BasePackage.Extent@27a8c74e</td></tr>
+<tr>
+<td title='BasePackage.Extent.testCase2()'><b>testCase2</b><br>Test class: BasePackage.Extent</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\sivaram loknath\eclipse-workspace\new\happy\testng.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace216856121", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace216856121'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\sivaram loknath\eclipse-workspace\new\happy\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:299)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:620)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:610)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>BasePackage.Extent@27a8c74e</td></tr>
+<tr>
+<td title='BasePackage.Extent.testCase3()'><b>testCase3</b><br>Test class: BasePackage.Extent</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\sivaram loknath\eclipse-workspace\new\happy\testng.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2095064787", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2095064787'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\sivaram loknath\eclipse-workspace\new\happy\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:299)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:620)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:610)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>BasePackage.Extent@27a8c74e</td></tr>
+<tr>
+<td title='BasePackage.Extent.testCase4()'><b>testCase4</b><br>Test class: BasePackage.Extent</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\sivaram loknath\eclipse-workspace\new\happy\testng.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace391183339", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace391183339'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\sivaram loknath\eclipse-workspace\new\happy\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:299)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:620)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:610)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>BasePackage.Extent@27a8c74e</td></tr>
+<tr>
+<td title='BasePackage.Extent.testCase5()'><b>testCase5</b><br>Test class: BasePackage.Extent</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\sivaram loknath\eclipse-workspace\new\happy\testng.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace646910062", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace646910062'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\sivaram loknath\eclipse-workspace\new\happy\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:299)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:620)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:610)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>BasePackage.Extent@27a8c74e</td></tr>
+</table><p>
+</body>
+</html>

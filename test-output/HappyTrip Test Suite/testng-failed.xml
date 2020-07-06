@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [HappyTrip Test Suite]">
+  <test thread-count="5" name="Flight Schedule Tests(failed)">
+    <classes>
+      <class name="BasePackage.Extent">
+        <methods>
+          <include name="testCase2"/>
+          <include name="tearDown"/>
+          <include name="testCase5"/>
+          <include name="getResult"/>
+          <include name="testCase3"/>
+          <include name="testCase4"/>
+          <include name="testCase1"/>
+          <include name="startReport"/>
+        </methods>
+      </class> <!-- BasePackage.Extent -->
+      <class name="happytrip.com.Login">
+        <methods>
+          <include name="loginAsAdmin"/>
+          <include name="teardown"/>
+          <include name="TestSetup"/>
+        </methods>
+      </class> <!-- happytrip.com.Login -->
+    </classes>
+  </test> <!-- Flight Schedule Tests(failed) -->
+</suite> <!-- Failed suite [HappyTrip Test Suite] -->
